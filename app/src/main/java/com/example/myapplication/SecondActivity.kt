@@ -1,6 +1,8 @@
 package com.example.myapplication
 
+
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -33,7 +35,7 @@ class SecondActivity : ComponentActivity() {
                 }
                 Button (
                     onClick = {
-                        val intent =  Intent(Intent.ACTION_VIEW)
+                        val intent = Intent(Intent.ACTION_VIEW)
                         intent.data = Uri.parse("https://readydokan.com/")
                         startActivity(intent)
                     },
